@@ -194,7 +194,7 @@ The schema consists of four relational tables managed via Prisma in PostgreSQL:
 
   *Prisma Studio shot of the actual `users` table showing the `passwordHash` column populated with real bcrypt hashes (and no plaintext password anywhere):*
 
-  ![users table with bcrypt password hash](docs/screenshots/users-table-hash.png)
+  ![users table with bcrypt password hash](Docs/Screenshots/users-table-hash.png)
 
 ### 2. Rate Limiting
 - **What it is:** A server-side throttling mechanism that restricts the frequency of requests to specific endpoints within defined sliding time windows.
@@ -334,13 +334,13 @@ The schema consists of four relational tables managed via Prisma in PostgreSQL:
 
   *Prisma Studio shot of the actual `email_verifications` table showing the `code`, `expiresAt`, and `used` columns, i.e. the stored-expiry + single-use state that makes the UI countdown non-authoritative:*
 
-  ![email verification codes in database](docs/screenshots/verification-codes-table.png)
+  ![email verification codes in database](Docs/Screenshots/verification-codes-table.png)
 
   *Prisma Studio shots of the actual `password_resets` and `sessions` tables showing real reset tokens and session tokens alongside their stored `expiresAt` timestamps:*
 
-  ![password reset tokens in database](docs/screenshots/password-reset-tokens.png)
+  ![password reset tokens in database](Docs/Screenshots/password-reset-tokens.png)
 
-  ![sessions in database](docs/screenshots/session-tokens.png)
+  ![sessions in database](Docs/Screenshots/session-tokens.png)
 
 ### 6. Idempotency
 - **What it is:** The property of an endpoint where making the same request multiple times produces the identical outcome without duplicate side effects.
